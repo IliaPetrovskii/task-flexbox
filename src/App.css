@@ -4,3 +4,28 @@ body,
     height: 100%;
     margin: 0;
 }
+div {
+    width: 100px;
+    height: 100px;
+    background: #daa520;
+    border-radius: 100%;
+}
+.flex-container {
+    display: flex;
+    height: 300px;
+    width: 700px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div + div {
+    align-self: center;
+}
+div + div + div {
+    align-self: end;
+}
+div + div + div + div {
+    align-self: center;
+}
+div + div + div + div + div {
+    align-self: start;
+}
